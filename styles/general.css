@@ -1,0 +1,41 @@
+html {
+    background-color: #DDBEAA;
+    height: 100vh;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Cascadia Code", monospace;
+}
+.redfont{
+    color: red;
+}
+.greenfont{
+    color: green;
+}
+.bluefont {
+    color: blue;
+}
+
+.bigfontsize{
+    font-size: 1.5em;
+}
+p {
+    text-align: justify;
+}
+
+.violetback {
+    background-color: mediumvioletred;
+}
+
+.greenback {
+    background-color: green;
+}
+
+.grayback {
+    background-color: gray;
+}
+
+.brownback {
+    background-color: chocolate;
+}
