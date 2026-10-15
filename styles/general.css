@@ -4,24 +4,24 @@
     --background3: rgba(21, 21, 21, 0.7);
     --text-color: rgba(255, 255, 255, 1);
     --color1: rgb(90, 27, 47);
-    --nav-height: 20vh;
+    --nav-height: 20dvh;
     --footer-height: 30px;
-    --upper-nav-height: 75vh;
+    --upper-nav-height: 75dvh;
 }
 
 
 html {
     background-color: var(--background) ;
 }
-@media (width <= 300px) {
+/*@media (width <= 300px) {
     html {
         scrollbar-width: none;
     }
-}
+}*/
 
 body {
     position: relative;
-    min-height: 100vh;
+    min-height: 100dvh;
     margin: 0;
     font-family: "Cascadia Code", monospace;
     color: var(--text-color);
