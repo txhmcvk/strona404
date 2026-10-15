@@ -1,27 +1,61 @@
+:root {
+    --background: rgb(21, 21, 21);
+    --background2: rgb(2, 2, 3);
+    --background3: rgba(21, 21, 21, 0.7);
+    --text-color: rgba(255, 255, 255, 1);
+    --color1: rgb(90, 27, 47);
+    --nav-height: 20vh;
+    --footer-height: 30px;
+    --upper-nav-height: 75vh;
+}
+
+
 html {
-    background-color: #DDBEAA;
-    height: 100vh;
+    background-color: var(--background) ;
 }
 body {
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
     margin: 0;
     font-family: "Cascadia Code", monospace;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+
 }
-.redfont{
-    color: red;
+
+
+footer{
+    background-color: var(--color1);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
-.greenfont{
-    color: green;
+.cosinnego {
+    position: sticky;
+    top: 0;
+    height: var(--nav-height);
 }
-.bluefont {
-    color: blue;
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: var(--footer-height);
+    background-color: var(--background2);
 }
+
 
 .bigfontsize{
     font-size: 1.5em;
 }
 p {
     text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .violetback {
