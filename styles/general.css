@@ -13,11 +13,11 @@
 html {
     background-color: var(--background) ;
 }
-/*@media (width <= 300px) {
+@media (width <= 750px) {
     html {
         scrollbar-width: none;
     }
-}*/
+}
 
 body {
     position: relative;
