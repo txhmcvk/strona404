@@ -11,8 +11,7 @@
 
 
 html {
-    /*background-color: var(--background) ;*/
-    background-color: aqua;
+    background-color: var(--background) ;
 
 }
 @media (width <= 750px) {
@@ -29,7 +28,6 @@ body {
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    background-color: red;
     box-sizing: border-box;
 }
 
