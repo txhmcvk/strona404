@@ -11,7 +11,9 @@
 
 
 html {
-    background-color: var(--background) ;
+    /*background-color: var(--background) ;*/
+    background-color: aqua;
+
 }
 @media (width <= 750px) {
     html {
@@ -27,10 +29,13 @@ body {
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-
+    background-color: red;
+    box-sizing: border-box;
 }
 
-
+nav, footer {
+    box-sizing: border-box;
+}
 footer{
     background-color: var(--color1);
     display: flex;
