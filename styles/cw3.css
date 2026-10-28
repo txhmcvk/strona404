@@ -1,0 +1,27 @@
+.pack {
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+
+.nonepack {
+    box-sizing: border-box;
+    border-style: hidden;
+    height: 100px;
+    width: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

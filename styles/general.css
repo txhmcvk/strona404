@@ -1,0 +1,84 @@
+:root {
+    --background: rgb(21, 21, 21);
+    --background2: rgb(2, 2, 3);
+    --background3: rgba(21, 21, 21, 0.7);
+    --text-color: rgba(255, 255, 255, 1);
+    --color1: rgb(90, 27, 47);
+    --nav-height: 20dvh;
+    --footer-height: 30px;
+    --upper-nav-height: 75dvh;
+}
+
+
+html {
+    background-color: var(--background) ;
+
+}
+@media (width <= 750px) {
+    html {
+        scrollbar-width: none;
+    }
+}
+
+body {
+    position: relative;
+    min-height: 100dvh;
+    margin: 0;
+    font-family: "Cascadia Code", monospace;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+nav, footer {
+    box-sizing: border-box;
+}
+footer{
+    background-color: var(--color1);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.cosinnego {
+    position: sticky;
+    top: 0;
+    height: var(--nav-height);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: var(--footer-height);
+    background-color: var(--background2);
+}
+
+
+.bigfontsize{
+    font-size: 1.5em;
+}
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.violetback {
+    background-color: mediumvioletred;
+}
+
+.greenback {
+    background-color: green;
+}
+
+.grayback {
+    background-color: gray;
+}
+
+.brownback {
+    background-color: chocolate;
+}

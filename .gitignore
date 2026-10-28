@@ -1,0 +1,18 @@
+# Pliki systemowe (macOS / Windows)
+.DS_Store
+Thumbs.db
+
+# Pliki edytorów kodu (VS Code, WebStorm itp.)
+.vscode/
+.idea/
+*.suo
+*.swp
+
+# Zależności i logi (jeśli używasz npm do paczek pomocniczych, np. Prettier)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Katalogi kompilacji (jeśli w przyszłości użyjesz bundlera, np. Vite, Parcel)
+dist/
+build/
