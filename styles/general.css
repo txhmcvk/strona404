@@ -1,10 +1,11 @@
 :root {
     --background: rgb(21, 21, 21);
     --background2: rgb(2, 2, 3);
-    --background3: rgba(21, 21, 21, 0.7);
+    --background3: rgba(26, 26, 26, 0.7);
+    --background4: rgb(26, 25, 23);
     --text-color: rgba(255, 255, 255, 1);
     --color1: rgb(90, 27, 47);
-    --nav-height: 20dvh;
+    --nav-height: 10dvh;
     --footer-height: 30px;
     --upper-nav-height: 75dvh;
 }
@@ -29,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    padding: 0;
 }
 
 nav, footer {
