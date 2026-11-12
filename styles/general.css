@@ -69,18 +69,3 @@ a {
     color: var(--text-color);
 }
 
-.violetback {
-    background-color: mediumvioletred;
-}
-
-.greenback {
-    background-color: green;
-}
-
-.grayback {
-    background-color: gray;
-}
-
-.brownback {
-    background-color: chocolate;
-}
