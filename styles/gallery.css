@@ -4,28 +4,24 @@
 
     padding: 0px;
     display: flex;
-    flex-direction: column;
     align-items: safe center;
     justify-content: start;
+    z-index: 11;
+    flex-direction: column;
     box-sizing: border-box;
-    overflow-x:auto;
-    scrollbar-width: none;
-    container-type: inline-size;
-}
-.gallery-header{
-    font-size: min(6rem, 15cqw);
-    padding: 0 1rem;
+    margin-top: calc((100dvh - var(--section-height) - var(--nav-height))/ 2);
+    margin-bottom: 15dvh;
 }
 
 .gallery-container{
     position: relative;
     display: grid;
     gap: 2rem;
-    padding: min(5rem, 5%);
-    padding-top: 0;
+    padding: 20dvh min(5rem, 5%);
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
     width: 100%;
     box-sizing: border-box;
+    background-color: var(--background4);
 }
 
 .image-container{

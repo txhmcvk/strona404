@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    />
+    <title>Strona 1</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/general.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">nav contain</div>
+    </nav>
+    <main class="main-container">
+        <div class="image-section-container">
+            <div class="image-section-background first-image-section-background">
+                <img src="images/index/wymiary.jpg" alt="obrazek" class="tlo1">
+            </div>
+            <div class="image-section-content first-image-section-content">
+                <h1 class="image-section-title">CONTACT</h1>
+            </div>
+        </div>
+        <div class="standard-section-container">
+            <div class="contact-info-container">
+                <h3>Contact Info</h3>
+                    <div class="contact-information-holder">
+                    <div class="contact-information">Phone: +01 878373747</div>
+                    <div class="contact-information">Email: asdhfdg@gmail.com</div>
+                    <div class="contact-information">Address: Royal st. 45/7 New York</div>
+                    <div class="contact-information">Postal-Code: 01-101</div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form-container">
+            <input type="file" class="file-input">
+            <div class="file-upload-wrapper">
+
+                <!-- 1. Prawdziwy, ale ukryty input -->
+                <input type="file" id="ukryty-input" hidden>
+
+                <!-- 2. TWÓJ WŁASNY PRZYCISK (tutaj zmieniasz tekst na guziku) -->
+                <label for="ukryty-input" class="twoja-klasa-przycisku">
+                    Dodaj zdjęcie
+                </label>
+
+                <!-- 3. TWÓJ WŁASNY KOMUNIKAT (tutaj zmieniasz tekst początkowy) -->
+                <span id="komunikat-pliku">Jeszcze nic nie wgrano...</span>
+
+            </div>
+        </div>
+    </main>
+    <footer>footer</footer>
+    <script src="scripts/general.js"></script>
+</body>
+</html>
