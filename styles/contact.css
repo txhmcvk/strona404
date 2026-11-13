@@ -1,3 +1,7 @@
+input{
+    min-width: 50px;
+}
+
 .contact-info-container{
     display: flex;
     flex-direction: column;
@@ -21,13 +25,21 @@
 
 .contact-form-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: safe center;
+    justify-content: flex-start;
+    padding: min(10px, 5dvh, 5dvw);
+}
+
+.contact-form-title-container{
+    display: flex;
+    flex-direction: column;
     justify-content: safe center;
 }
 
-.button,
+button,
 .file-input::file-selector-button,
+.email-attachments-fake-label,
 .twoja-klasa-przycisku{
     background-color: var(--color1);
     color: white;
@@ -40,8 +52,125 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.email-attachments-fake-label,
+.email-attachments-button-add-attachment{
+    padding: 3px 10px;
+    font-size: small;
+    display:inline-block;
+    white-space: nowrap;
 }
 
-{
 
+
+.contact-form-body-container{
+    display: flex;
+    flex-direction: column;
+    width: min(800px, 90dvw);
+    gap: 3px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+
+.email-meta-container{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+.email-content-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.email-message-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 3px;
+    /*min-width: 0;*/
+}
+
+.email-attachments-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    gap: 3px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.email-message-label{
+    min-width: 75px;
+    height: 175px;
+    resize: none;
+}
+
+.email-message-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-attachments-add-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*overflow: auto;*/
+    /*scrollbar-width: none;*/
+    gap: 10px;
+}
+.email-add-attachment-info{
+    flex: 1;
+    min-width: 0;
+    font-size: small;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 3px 0;
+
+    /*min-width: min(100px, 90dvw);*/
+}
+.email-attachments-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email-attachments-info{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    gap: 3px;
+    height: 145px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.email-send-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px min(10px, 30dvw);
+}
+
+.email-send-button{
+    padding: 10px min(100px, 30dvw);
+}
+
+@media (width <= 850px) {
+    .email-content-container {
+        flex-direction: column;
+    }
+}
+
+@media (width <= 300px) {
+    .email-attachments-add-section{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
 }

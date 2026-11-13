@@ -35,20 +35,63 @@
             </div>
         </div>
         <div class="contact-form-container">
-            <input type="file" class="file-input">
-            <div class="file-upload-wrapper">
+            <div class="contact-form-title-container">
+                <h2 class="contact-form-title">Write to us</h2>
+            </div>
+            <div class="contact-form-body-container">
+                <div class="email-meta-container">
+                    <label for="sender1" class="email-sender-label">From: </label>
+                    <input type="email" name="sender1" id="sender1" class="email-sender-input" placeholder="Your's email">
+                    <label for="topic1" class="email-topic-label">Topic: </label>
+                    <input type="text" name="topic1" id="topic1" class="email-topic-input" placeholder="Topic">
+                </div>
+                <div class="email-content-container">
+                    <div class="email-message-container">
+                        <label for="message1">Message:</label>
+                        <div class="email-message-content">
+                            <textarea rows="6" name="message1" id="message1" class="email-message-label"></textarea>
+                        </div>
+                    </div>
+                    <div class="email-attachments-container">
+                        <label>Attachments:</label>
+                        <div class="email-attachments-content">
+                            <div class="email-attachments-add-section">
+                                <input type="file" name="file1" id="file1" class="email-attachments-input" hidden>
+                                <label for="file1" class="email-attachments-fake-label">choose file</label>
+                                <label id="email-add-attachment-info" class="email-add-attachment-info">info sdfshfk sdjfh sdk shdkf jhsdfk jhkjhdsf</label>
+                                <button class="email-attachments-button-add-attachment">add file</button>
+                            </div>
+                            <div id="email-attachments-info" class="email-attachments-info">
+                                <label>asdhgajdzdfffffffffffffffffffffffffffffffffsgggggggdsfsfg</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
+                                <label>asdhgajd</label>
 
-                <!-- 1. Prawdziwy, ale ukryty input -->
-                <input type="file" id="ukryty-input" hidden>
 
-                <!-- 2. TWÓJ WŁASNY PRZYCISK (tutaj zmieniasz tekst na guziku) -->
-                <label for="ukryty-input" class="twoja-klasa-przycisku">
-                    Dodaj zdjęcie
-                </label>
-
-                <!-- 3. TWÓJ WŁASNY KOMUNIKAT (tutaj zmieniasz tekst początkowy) -->
-                <span id="komunikat-pliku">Jeszcze nic nie wgrano...</span>
-
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-send-container">
+                    <button class="email-send-button">Send</button>
+                </div>
             </div>
         </div>
     </main>
